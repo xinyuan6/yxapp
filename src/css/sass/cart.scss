@@ -1,0 +1,189 @@
+@charset 'utf-8';
+// 引入hotcss的px2rem函数的文件
+@import '../../lib/hotcss-master/src/px2rem.scss';
+// 定义设计图的宽度
+$designWidth:750;
+$page-padding:px2rem(26);
+$cart-settlement-h: px2rem(88);
+// 购物车顶部样式
+.top-hd {
+    color: #fff;
+    background: linear-gradient(to right, #931B5A, #FF355A);
+    h3 {
+        text-align: center;
+        font-size: px2rem(30);
+        height: px2rem(90);
+        line-height: px2rem(90);
+    }
+    .tp-shopcart-edit {
+        position: absolute;
+        right: $page-padding;
+        top: px2rem(30);
+        font-size: px2rem(28);
+        line-height: px2rem(28);
+    }
+}
+
+// 购物车列表模块
+.icon_selected {
+    background-color: #ec1a5a;
+    height: px2rem(42);
+    width: px2rem(42);
+    border-radius: 50%;
+    font-size: px2rem(30);
+    color: #fff;
+    text-align: center;
+    line-height: px2rem(44);
+    flex: 0 0 px2rem(42);
+}
+
+.goods-list {
+    margin-bottom: $cart-settlement-h;
+    .good-item {
+        color: #333;
+        .good-item-hd {
+            border: 1px solid #ccc;
+            border-left: none;
+            border-right: none;
+            height: px2rem(72);
+            background-color: #fff;
+            padding: px2rem(16) $page-padding;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: $page-padding;
+            h4 {
+                font-size: px2rem(28);
+                padding-left: px2rem(15);
+            }
+        }
+        .good-item-bd {
+            height: px2rem(214);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 $page-padding;
+            background-color: #fff;
+            .good-item-bd-l {
+                padding-left: px2rem(15);
+                a {
+                    display: block;
+                    img {
+                        vertical-align: top;
+                        width: px2rem(185);
+                        height: px2rem(180);
+                    }
+                }
+            }
+            .good-item-bd-r {
+                height: px2rem(180);
+                margin-left: px2rem(15);
+                line-height: px2rem(27);
+                .good-item-name {
+                    font-size: px2rem(22);
+                    height: px2rem(54);
+                }
+                .good-item-sku {
+                    font-size: px2rem(22);
+                    .sku-name {
+                        color: #666;
+                    }
+                    .sku-value {
+                        color: #ec1a5a;
+                    }
+                    .yx-sjicon-wrap {
+                        height: px2rem(17);
+                        width: px2rem(168);
+                        background: url(../img/mobiphone.png) no-repeat;
+                        background-size: contain;
+                        margin: px2rem(5) 0;
+                    }
+                    .good-item-price {
+                        color: #ec1a5a;
+                        font-size: px2rem(23);
+                        line-height: 1;
+                    }
+                    .good-item-edit-wrap {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        height: px2rem(48);
+                        .edit-count-wrap {
+                            border: 1px solid #ccc;
+                            border-radius: px2rem(4);
+                            overflow: hidden;
+                            span {
+                                float: left;
+                                height: px2rem(40);
+                                font-size: px2rem(20);
+                                line-height: px2rem(40);
+                                padding: 0 px2rem(12);
+                                border-left: 1px solid #ccc;
+                                &:first-child {
+                                    border-left: none;
+                                }
+                            }
+                        }
+                        .edit-btn {
+                            font-size: px2rem(36);
+                        }
+                    }
+                }
+            }
+        }
+        .good-item-sep {
+            background-color: #eee;
+            height: px2rem(20);
+        }
+    }
+}
+
+.goods-account-wrap {
+    padding-left: $page-padding;
+    box-sizing: border-box;
+    height: $cart-settlement-h;
+    width: 100%;
+    background-color: #fff;
+    opacity: .8;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+    // 结算模块
+    .account-l {
+        float: left;
+        font-size: px2rem(32);
+        line-height: $cart-settlement-h;
+        a {
+            display: block;
+        }
+        i {
+            display: inline-block;
+            height: px2rem(40);
+            width: px2rem(40);
+        }
+    }
+    .account-r {
+        float: right;
+        display: flex;
+        line-height: $cart-settlement-h;
+        font-size: px2rem(24);
+        .account-r-sum {
+            width: px2rem(238);
+            height: $cart-settlement-h;
+            line-height: $cart-settlement-h;
+            .price-num {
+                color: #ec1a5a;
+            }
+        }
+        .account-settle {
+            width: px2rem(222);
+            height: 100%;
+            box-sizing: border-box;
+            color: #fff;
+            background: linear-gradient(to right, #910758, #f61c5a);
+            text-align: center;
+        }
+    }
+}

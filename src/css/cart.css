@@ -1,0 +1,208 @@
+.top-hd {
+  color: #fff;
+  background: linear-gradient(to right, #931B5A, #FF355A);
+}
+
+.top-hd h3 {
+  text-align: center;
+  font-size: 0.64rem;
+  height: 1.92rem;
+  line-height: 1.92rem;
+}
+
+.top-hd .tp-shopcart-edit {
+  position: absolute;
+  right: 0.55467rem;
+  top: 0.64rem;
+  font-size: 0.59733rem;
+  line-height: 0.59733rem;
+}
+
+.icon_selected {
+  background-color: #ec1a5a;
+  height: 0.896rem;
+  width: 0.896rem;
+  border-radius: 50%;
+  font-size: 0.64rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.93867rem;
+  flex: 0 0 0.896rem;
+}
+
+.goods-list {
+  margin-bottom: 1.87733rem;
+}
+
+.goods-list .good-item {
+  color: #333;
+}
+
+.goods-list .good-item .good-item-hd {
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  height: 1.536rem;
+  background-color: #fff;
+  padding: 0.34133rem 0.55467rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0.55467rem;
+}
+
+.goods-list .good-item .good-item-hd h4 {
+  font-size: 0.59733rem;
+  padding-left: 0.32rem;
+}
+
+.goods-list .good-item .good-item-bd {
+  height: 4.56533rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0.55467rem;
+  background-color: #fff;
+}
+
+.goods-list .good-item .good-item-bd .good-item-bd-l {
+  padding-left: 0.32rem;
+}
+
+.goods-list .good-item .good-item-bd .good-item-bd-l a {
+  display: block;
+}
+
+.goods-list .good-item .good-item-bd .good-item-bd-l a img {
+  vertical-align: top;
+  width: 3.94667rem;
+  height: 3.84rem;
+}
+
+.goods-list .good-item .good-item-bd .good-item-bd-r {
+  height: 3.84rem;
+  margin-left: 0.32rem;
+  line-height: 0.576rem;
+}
+
+.goods-list .good-item .good-item-bd .good-item-bd-r .good-item-name {
+  font-size: 0.46933rem;
+  height: 1.152rem;
+}
+
+.goods-list .good-item .good-item-bd .good-item-bd-r .good-item-sku {
+  font-size: 0.46933rem;
+}
+
+.goods-list .good-item .good-item-bd .good-item-bd-r .good-item-sku .sku-name {
+  color: #666;
+}
+
+.goods-list .good-item .good-item-bd .good-item-bd-r .good-item-sku .sku-value {
+  color: #ec1a5a;
+}
+
+.goods-list .good-item .good-item-bd .good-item-bd-r .good-item-sku .yx-sjicon-wrap {
+  height: 0.36267rem;
+  width: 3.584rem;
+  background: url(../img/mobiphone.png) no-repeat;
+  background-size: contain;
+  margin: 0.10667rem 0;
+}
+
+.goods-list .good-item .good-item-bd .good-item-bd-r .good-item-sku .good-item-price {
+  color: #ec1a5a;
+  font-size: 0.49067rem;
+  line-height: 1;
+}
+
+.goods-list .good-item .good-item-bd .good-item-bd-r .good-item-sku .good-item-edit-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 1.024rem;
+}
+
+.goods-list .good-item .good-item-bd .good-item-bd-r .good-item-sku .good-item-edit-wrap .edit-count-wrap {
+  border: 1px solid #ccc;
+  border-radius: 0.08533rem;
+  overflow: hidden;
+}
+
+.goods-list .good-item .good-item-bd .good-item-bd-r .good-item-sku .good-item-edit-wrap .edit-count-wrap span {
+  float: left;
+  height: 0.85333rem;
+  font-size: 0.42667rem;
+  line-height: 0.85333rem;
+  padding: 0 0.256rem;
+  border-left: 1px solid #ccc;
+}
+
+.goods-list .good-item .good-item-bd .good-item-bd-r .good-item-sku .good-item-edit-wrap .edit-count-wrap span:first-child {
+  border-left: none;
+}
+
+.goods-list .good-item .good-item-bd .good-item-bd-r .good-item-sku .good-item-edit-wrap .edit-btn {
+  font-size: 0.768rem;
+}
+
+.goods-list .good-item .good-item-sep {
+  background-color: #eee;
+  height: 0.42667rem;
+}
+
+.goods-account-wrap {
+  padding-left: 0.55467rem;
+  box-sizing: border-box;
+  height: 1.87733rem;
+  width: 100%;
+  background-color: #fff;
+  opacity: .8;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.goods-account-wrap .account-l {
+  float: left;
+  font-size: 0.68267rem;
+  line-height: 1.87733rem;
+}
+
+.goods-account-wrap .account-l a {
+  display: block;
+}
+
+.goods-account-wrap .account-l i {
+  display: inline-block;
+  height: 0.85333rem;
+  width: 0.85333rem;
+}
+
+.goods-account-wrap .account-r {
+  float: right;
+  display: flex;
+  line-height: 1.87733rem;
+  font-size: 0.512rem;
+}
+
+.goods-account-wrap .account-r .account-r-sum {
+  width: 5.07733rem;
+  height: 1.87733rem;
+  line-height: 1.87733rem;
+}
+
+.goods-account-wrap .account-r .account-r-sum .price-num {
+  color: #ec1a5a;
+}
+
+.goods-account-wrap .account-r .account-settle {
+  width: 4.736rem;
+  height: 100%;
+  box-sizing: border-box;
+  color: #fff;
+  background: linear-gradient(to right, #910758, #f61c5a);
+  text-align: center;
+}
